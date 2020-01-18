@@ -1,0 +1,231 @@
+<% layout('adm-layout') -%>
+    <div id="blog-carousel" class="adm-element pt-1 px-1 loading-float">
+        <div class="top-bar">
+            <div class="hRow jus-start aln-center py-2"><img class="s2424 ml-2" src="/images/padrao/carousel.png" alt=""> <span class="sfit text-left m-0 p-0 ml-2 h4">BLOG CARROSSEL</span></div>
+        </div>
+        <div class="inner hide">
+            <!-- inner -->
+            <div class="carousel-viewport">
+                <!-- gen-viewport -->
+                <div class="carousel-flow">
+                    <!-- gen-flow -->
+                    <div root class="row m-0 p-1"></div>
+                </div>
+            </div>
+            <!-- /inner -->
+            <!-- inner thumb -->
+            <div thumb="col-12 col-sm-6 col-md-4  col-lg-3 p-1" class="d-none">
+                <div class="feed-thumb"><img class="ft-image" src="/images/padrao/noimage.webp" alt="">
+                    <div class="ft-side">
+                        <a class="ft-del mt-2"></a>
+                        <a class="ft-edit mt-2 d-none"></a>
+                        <a class="ft-lamp mt-2 d-none"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+            <div modal class="d-none">
+                <form action="#" class="gen-form">
+                    <div class="row p-0 m-0">
+                        <!--  -->
+                        <div class="col-12 col-md-5 p-0 m-auto">
+                            <label class="pb-0 col-12 lb">Imagem
+                                <div class="img-holder pb58"><img class="img-preview" index="0" src="/images/padrao/noimage.webp" alt="">
+                                    <a class="img-holder-bt"></a>
+                                </div>
+                            </label>
+                        </div>
+                        <!--  -->
+                        <div class="col-12 col-md-7 m-0 p-0">
+                            <label class="pb-0 col-12 lb">Caption
+                                <input type="text" name="title" class="form-control">
+                            </label>
+                            <label class="pb-0 col-12 lb">link
+                                <input type="text" name="subtitle" class="form-control">
+                            </label>
+                            <label class="pb-0 col-12 lb">Data
+                                <input type="date" name="date" class="form-control">
+                            </label>
+                        </div>
+                        <div class="col-12 m-0 p-0 d-none">
+                            <label class="mb-0 pb-0 col-12 lb">Corpo
+                                <textarea cols="30" rows="9" type="text" name="body" class="form-control"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--  -->
+        </div>
+        <div class="hRow jus-end aln-center bottom-bar">
+            <div class="hRow aln-center left-bottom ml-3">
+                <button class="edit-btn bg-plus"></button>
+            </div>
+            <div class="vRow jus-end aln-center midle-bottom">
+                <a class="show-btn"></a>
+            </div>
+            <div class="hRow jus-end aln-center mr-3">
+                <button class="d-none cancel-btn mx-1"></button>
+                <button class="d-none save-btn"></button>
+            </div>
+        </div>
+    </div>
+    <div id="blog-feed" class="adm-element pt-1 px-1 loading-float">
+        <div class="top-bar">
+            <div class="hRow jus-start aln-center py-2"><img class="s2424 ml-2" src="/images/padrao/feed.png" alt=""> <span class="sfit text-left m-0 p-0 ml-2 h4">BLOG FEED</span></div>
+        </div>
+        <div class="inner">
+            <!-- inner -->
+            <div class="gen-viewport">
+                <!-- gen-viewport -->
+                <div class="gen-flow">
+                    <!-- gen-flow -->
+                    <div root class="row m-0 p-1"></div>
+                </div>
+            </div>
+            <!-- /inner -->
+            <!-- inner thumb -->
+            <div thumb="col-12 col-sm-6 col-lg-4  p-1" class="d-none">
+                <div class="feed-thumb pb60"><img class="ft-image" src="/images/padrao/noimage.webp" alt="">
+                    <div class="ft-top"></div>
+                    <div class="abs-rt sfit">
+                        <div class="hRow sfit mr-1 mt-1">
+                            <a class="ft-btn ft-edit ml-1"></a>
+                            <a class="ft-btn ft-del ml-1"></a>
+                            <a class="ft-btn ft-lamp ml-1 d-none"></a>
+                        </div>
+                    </div><span class="abs-lt sfit white-blur ml-1 mt-1 px-2"><div class="hRow jus-center aln-center w-100"><img class="ft-icon" src="/images/padrao/eye.png" alt=""> <span class="ml-1 sfit text-center text-black font-weight-bold p ft-views">00</span></div>
+                </span>
+                <div class="abs-lb mb-1 p-0 sfit ml-1 bg-white"><span class="font-weight-bold p text-center lh-1 text-black ft-title">Titlo dessa budega aqui</span></div>
+            </div>
+        </div>
+        <!-- modal -->
+        <div modal class="d-none">
+            <form action="#" class="gen-form m-0 p-0">
+                <div class="row p-0 m-0">
+                    <!--  -->
+                    <div class="col-12 col-lg-4 m-0 p-0">
+                        <label class="col-12 lb p-0 m-0 pr-lg-2">Imagem
+                            <div class="img-holder pb66"><img class="img-preview" index="0" alt="">
+                                <a class="img-holder-bt"></a>
+                            </div>
+                        </label>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-lg-8 m-0 p-0">
+                        <div class="row m-0 p-0 pl-0">
+                            <label class="col-12 lb m-0 p-0">Título
+                                <input type="text" name="title" class="form-control" normalize="param">
+                            </label>
+                            <label class="col-12 lb m-0 p-0">subtítulo
+                                <input type="text" name="subtitle" class="form-control">
+                            </label>
+                            <label class="col-12 col-md-6 lb m-0 p-0">Categoria
+                                <input type="text" name="topic" class="form-control" normalize="!self">
+                            </label>
+                            <label class="col-12 col-md-6 lb m-0 p-0 pl-md-2">Data
+                                <input type="date" name="date" class="form-control">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 m-0 p-0 mt-1">
+                        <label class="mb-0 pb-0 px-0 col-12 lb text-muted mt-2">
+                            <div id="editControls" class="col-12">
+                                <div class="row">
+                                    <div class="hRow jus-center bt-group mr-1">
+                                        <a class="editor-btn ic ic-undo" data-role="undo" href="#"></a>
+                                        <a class="editor-btn ic ic-redo" data-role="redo" href="#"></a>
+                                    </div>
+                                    <div class="hRow jus-center bt-group mr-1"><a class="editor-btn" data-role="bold" href="#"><b>b</b></a> <a class="editor-btn" data-role="italic" href="#"><i>I</i></a> <a class="editor-btn" data-role="underline" href="#"><u><b>U</b></u></a> <a class="editor-btn" data-role="strikeThrough" href="#"><strike>abc</strike></a></div>
+                                    <div class="hRow jus-center bt-group mr-1">
+                                        <a class="editor-btn ic ic-left-alignment" data-role="justifyLeft" href="#"></a>
+                                        <a class="editor-btn ic ic-center-alignment" data-role="justifyCenter" href="#"></a>
+                                        <a class="editor-btn ic ic-right-alignment" data-role="justifyRight" href="#"></a>
+                                        <a class="editor-btn ic ic-justify-alignment" data-role="justifyFull" href="#"></a>
+                                    </div>
+                                    <div class="hRow jus-center bt-group mr-1">
+                                        <a class="editor-btn ic ic-indent" data-role="indent" href="#"></a>
+                                        <a class="editor-btn ic ic-outdent" data-role="outdent" href="#"></a>
+                                    </div>
+                                    <div class="hRow jus-center bt-group mr-1">
+                                        <a class="editor-btn ic ic-list" data-role="insertUnorderedList" href="#"></a>
+                                        <a class="editor-btn ic ic-numbered" data-role="insertOrderedList" href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="editor-input" style="" spellcheck="false" contenteditable class="p-1 py-md-2 px-md-3 m-0"></div>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--  -->
+    </div>
+    <div class="hRow jus-end aln-center bottom-bar">
+        <div class="hRow aln-center left-bottom ml-3">
+            <button class="edit-btn bg-plus"></button>
+        </div>
+        <div class="vRow jus-end aln-center midle-bottom">
+            <a class="show-btn"></a>
+        </div>
+        <div class="hRow jus-end aln-center mr-3">
+            <button class="d-none cancel-btn mx-1"></button>
+            <button class="d-none save-btn"></button>
+        </div>
+    </div>
+    </div>
+    <div id="sobremim" class="adm-element pt-1 px-1 loading-float">
+        <div class="top-bar">
+            <div class="hRow jus-start aln-center py-2"><img class="s2424 ml-2" src="/images/padrao/info.png" alt=""> <span class="sfit text-left m-0 p-0 ml-2 h4">SOBRE MIM</span></div>
+        </div>
+        <div class="inner hide">
+            <!-- inner -->
+            <div root class="flow row m-0 p-0 col-12 m-auto">
+                <form class="gen-form m-0 p-0 py-2">
+                    <div class="row m-0 p-0">
+                        <div class="p-0 p-sm-1 col-12 col-md-6 m-auto">
+                            <label class="lb">Imagem
+                                <div class="img-holder"><img class="img-preview" index="0" src="" alt="">
+                                    <a class="img-holder-bt"></a>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <form class="gen-form m-0 p-0 py-2">
+                    <div class="row m-0 p-0">
+                        <div class="p-0 p-sm-1 col-12 col-md-4 offset-4">
+                            <label class="lb">Imagem
+                                <div class="img-holder"><img class="img-preview" index="0" src="" alt="">
+                                    <a class="img-holder-bt"></a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="m-auto col-12 col-md-8">
+                            <label for="title" class="lb">Titulo
+                                <input class="p" name="title" type="text">
+                            </label>
+                        </div>
+                        <div class="m-auto col-12 col-md-8">
+                            <label for="title" class="lb">Corpo
+                                <textarea class="p form-body" name="body" rows="5" cols="30" class="" type="text"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- inner -->
+        </div>
+        <div class="hRow jus-end aln-center bottom-bar">
+            <div class="hRow aln-center left-bottom ml-3">
+                <button class="edit-btn bg-padlock d-none"></button>
+            </div>
+            <div class="vRow jus-end aln-center midle-bottom">
+                <a class="show-btn m-0 p-0"></a>
+            </div>
+            <div class="hRow jus-end aln-center mr-3">
+                <button class="cancel-btn mx-1 d-none"></button>
+                <button class="save-btn"></button>
+            </div>
+        </div>
+    </div>

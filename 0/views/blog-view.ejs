@@ -1,0 +1,56 @@
+<% layout('main-layout') -%>
+    <link rel="stylesheet" href="/stylesheets/blog-stylesheet-min.css">
+    <div class="container box my-1 my-md-3">
+        <div id="topo" class="mt-1 mt-md-2 bd-red">
+            <div id="blog-carousel" class="carousel slide bd-red" data-ride="carousel">
+                <div class="carousel-inner">
+                    <%for (var index in conteudo['blog-carousel']){%>
+                        <% if(index == 0){ %>
+                            <div class="carousel-item active" target="_blank">
+                                <img src="<%= conteudo['blog-carousel'][index].img[0].xs.location%>" srcset="<%= conteudo['blog-carousel'][index].srcset%>" class="carousel-img">
+                                <a href="<%= conteudo['blog-carousel'][index].subtitle%>" class="blog-carousel-caption "><%= conteudo['blog-carousel'][index].title%></a>
+                             
+                            </div>
+                            <% }else{%>
+                                <div class="carousel-item"  target="_blank">
+                                    <img src="<%= conteudo['blog-carousel'][index].img[0].xs.location%>" srcset="<%= conteudo['blog-carousel'][index].srcset%>" class="carousel-img">
+                                    <a href="<%= conteudo['blog-carousel'][index].subtitle%>" class="blog-carousel-caption"><%= conteudo['blog-carousel'][index].title%></a>
+                                </div>
+                                <%}}%>
+                </div><a class="carousel-control-prev" href="#blog-carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Anterior</span> </a><a class="carousel-control-next" href="#blog-carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Próximo</span></a></div>
+        </div>
+        <div id="miolo " class="mt-1 mt-md-3">
+            <div class="row m-0 p-0 pb-md-4 mb-4">
+                <!--  -->
+                <div class="col-12 col-md-8 p-0 m-0 down-fade px-3 bdy-ddd hfit"><span class="bread text-muted fs-medium pl-3 d-none">Mural</span>
+                    <div class="blog-feed vRow jus-start">
+                        <!--  -->
+                        <div class="prov-blog-thumb mb-md-1 stand-by"></div>
+                        <div class="prov-blog-thumb mb-md-1 stand-by"></div>
+                        <div class="prov-blog-thumb mb-md-1 stand-by"></div>
+                        <!--  -->
+                    </div>
+                    <div class="hRow jus-center w-100 mt-1 mt-sm-2 mt-lg-3">
+                        <nav class="bd-red sfit">
+                            <ul class="pagination pagination-md">
+                                <li class="page-item disabled" command="begin"><a class="page-link" href="#feed">Inicio</a></li>
+                                <li class="page-item disabled" command="prev"><a class="page-link" href="#feed">&laquo;</a></li>
+                                <li class="page-item disabled" index="0"><a class="page-link" href="#feed">&ensp;</a></li>
+                                <li class="page-item disabled" index="1"><a class="page-link" href="#feed">&ensp;</a></li>
+                                <li class="page-item disabled" index="2"><a class="page-link" href="#feed">&ensp;</a></li>
+                                <li class="page-item disabled" index="3"><a class="page-link" href="#feed">&ensp;</a></li>
+                                <li class="page-item disabled" command="next"><a class="page-link" href="#feed">&raquo;</a></li>
+                                <li class="page-item disabled" command="end"><a class="page-link" href="#feed">Fim</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- sidebar -->
+                <div class="col-12 col-md-4 p-0 m-0 pl-md-1 pl-lg-3">
+                    <% include partials/blog-view-sidebar %>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/blog-script-min.js"></script>

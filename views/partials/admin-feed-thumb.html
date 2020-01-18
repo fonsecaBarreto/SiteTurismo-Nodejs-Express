@@ -1,0 +1,68 @@
+<style>.feed-thumb{
+    background: rgb(224, 216, 216);
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    border: solid 1px #ddd;
+}
+.ft-image{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.ft-del{
+
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url("/images/padrao/cancel.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ft-edit{
+  
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url("/images/padrao/layers.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ft-lamp {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url("/images/padrao/lamp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .2s;
+}
+.ft-lamp:hover {
+
+    background-image: url("/images/padrao/lamp1.png");
+   
+}
+.ft-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 42px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,0.9115120169161415) 0%, rgba(255,255,255,0.7042291037508753) 53%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.9115120169161415) 0%, rgba(255,255,255,0.7042291037508753) 53%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.9115120169161415) 0%, rgba(255,255,255,0.7042291037508753) 53%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    box-shadow: 0px 2px 12px rgba(0,0,0,.13);
+  
+
+}</style><div class="feed-thumb"><img class="ft-image" src="/images/1.jpg" alt=""><div class="ft-side"><div class="ft-del mt-2"></div><div class="ft-edit mt-2"></div><div class="ft-lamp mt-2"></div></div></div>
